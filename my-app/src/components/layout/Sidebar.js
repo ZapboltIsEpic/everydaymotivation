@@ -15,6 +15,12 @@ export const Sidebar = () => {
                     </span>
                 </li>
             </ul>
+            <div className="sidebar__middle">
+                <span>
+                    <FaCog />
+                </span>
+                <h2>Challenges</h2>
+            </div>
         </div>
     );
 };
