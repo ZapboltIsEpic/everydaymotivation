@@ -1,10 +1,13 @@
 import React from 'react'
 import Checkbox from '../Checkbox'
+import { useChallenges } from '../hooks'
 
 export const Challenges = () => {
-    const challenges = [];
+    const { challenges } = useChallenges('1');
 
-    let projectName = '';
+    console.log(challenges);
+
+    const projectName = '';
 
     return (
         <div className = "challenges" data-test-id = "challenges">
