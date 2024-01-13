@@ -13,6 +13,7 @@ export const Sidebar = () => {
         <div className="sidebar" data-test-id="sidebar">
             <ul className="sidebar__generic">
                 <a href="/TODAYS_LIST"><FaHome />Today's List</a>
+                <a href="/RANDOM_CHALLENGE"><FaHome />Random Challenge</a>
                 <li>Upcoming Tasks/Deadlines</li>
                 <li>Today's Challenge</li>
                 <li>
