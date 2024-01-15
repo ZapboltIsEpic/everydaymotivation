@@ -4,6 +4,9 @@
     font-family: Arial, sans-serif;
     height: 100vh; /* Set height to 100% of viewport height */
     width: 100vw; /* Set width to 100% of viewport width */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Set flex direction to column */
+    position: relative; /* Enable positioning */
 }
 
 .header {
@@ -16,20 +19,36 @@
     display: flex;
     justify-content: flex-start; /* Align items from left to right */
     align-items: center;
-    flex-direction: column; /* Set flex direction to column */
+    position: sticky; /* Make the header sticky */
+    top: 0; /* Stick to the top of the viewport */
+    z-index: 1; /* Set a higher z-index to ensure it's always on top */
 }
 
 .content {
-    font-size: 16px;
-    line-height: 1.5;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    flex-grow: 1;
+    overflow: auto;
 }
+
+.content > * {
+    margin-right: 10px; /* Add space between items */
+}
+
+.content > *:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+}
+
 
 .sidebar {
     width: 200px;
-    background-color:brown;
+    background-color: brown;
     border-right: 1px solid #ccc;
     padding: 20px;
     height: 100vh;
+    position: sticky; /* Make the sidebar sticky */
+    top: 0; /* Stick to the top of the viewport */
 }
 
 .sidebar h2 {

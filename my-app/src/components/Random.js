@@ -18,7 +18,7 @@ const Random = () => {
 
     return (
         <div>
-            <button onClick={handleClick}>Generate Random Message</button>
+            <button onClick={handleClick}>Generate Random Challenge</button>
             {message && <p>{message}</p>}
         </div>
     );
